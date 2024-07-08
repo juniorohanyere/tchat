@@ -1,2 +1,2 @@
-# tchat
-The Terminal Chat Application
+# TChat.
+The Terminal Chat Application.
