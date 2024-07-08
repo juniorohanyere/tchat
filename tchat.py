@@ -93,8 +93,8 @@ class TServer:
                                             self.port, family=netifaces.AF_INET
                                            )
 
-    def run():
-        """Runs the tchat server
+    def launch():
+        """Launch the tchat server
         """
 
     try:
@@ -103,7 +103,7 @@ class TServer:
         sys.exit()
 
 
-class TClient:
+class TClient(Layout):
     """TChat Client class.
     """
 
@@ -116,6 +116,11 @@ class TClient:
 
         self.host = host
 
-    def run_client():
-        """Run the tchat client.
+    async def start(self):
+        client = self.run()
+
+    def launch():
+        """Launch the tchat client.
         """
+
+        asyncio.run(self.start())
